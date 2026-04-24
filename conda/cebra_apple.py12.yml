@@ -1,0 +1,58 @@
+##
+## CEBRA: Consistent EmBeddings of high-dimensional Recordings using Auxiliary variables
+## © Mackenzie W. Mathis & Steffen Schneider (v0.4.0+)
+## Source code:
+## https://github.com/AdaptiveMotorControlLab/CEBRA
+##
+## Please see LICENSE.md for the full license document:
+## https://github.com/AdaptiveMotorControlLab/CEBRA/blob/main/LICENSE.md
+##
+## Licensed under the Apache License, Version 2.0 (the "License");
+## you may not use this file except in compliance with the License.
+## You may obtain a copy of the License at
+##
+## http://www.apache.org/licenses/LICENSE-2.0
+##
+## Unless required by applicable law or agreed to in writing, software
+## distributed under the License is distributed on an "AS IS" BASIS,
+## WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+## See the License for the specific language governing permissions and
+## limitations under the License.
+##
+
+## Conda environment updated for 2025 Apple silicon compatibility
+
+name: cebra_apple
+channels:
+    - pytorch-lts
+    - conda-forge
+dependencies:
+    - python==3.12
+    - pip
+    - pytorch
+    - basedpyright
+    - imbalanced-learn
+    - jupyter
+    - matplotlib
+    - scipy
+    - scikit-learn
+    - pandas
+    - tensorflow
+    - joblib
+    - umap-learn
+    - opentsne
+    - tqdm
+    - h5py
+    - pylint
+    - yapf
+    - isort
+    - nbconvert
+    - ipykernel
+    - seaborn
+    - pip:
+        - cebra
+        - tensorflow-metal
+        - literate-dataclasses
+        - nlb_tools@ git+https://github.com/neurallatents/nlb_tools
+        - torch
+
